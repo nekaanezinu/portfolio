@@ -19,7 +19,7 @@
       <div class="project-description">
         <div class="description-item">
           Site:
-          <a v-if="project.site" :href="project.site">{{ project.site }}</a>
+          <a v-if="project.site" :href="project.site" target="_blank">{{ project.site }}</a>
           <span v-else>N/A</span>
         </div>
         <div class="description-item">Period: <span>{{ project.period }}</span></div>

@@ -63,8 +63,16 @@ export default {
     width: 100%;
     margin-top: 10px;
 
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
+
     .project-preview {
       width: 30%;
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+      }
 
       .project-image {
         max-width: 100%;
@@ -75,6 +83,10 @@ export default {
     .project-description {
       width: calc(70% - 20px);
       padding: 0 10px;
+
+      @media screen and (max-width: 1000px) {
+        width: calc(100% - 20px);
+      }
 
       .description-item {
         margin-bottom: 10px;

@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 body {
   margin: 0;
 }
@@ -28,5 +28,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   display: flex;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
 </style>

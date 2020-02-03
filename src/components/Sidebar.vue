@@ -46,6 +46,11 @@ export default {
   width: 25%;
   background: #00796b;
 
+  @media screen and (max-width: 1000px) {
+    height: 11em;
+    width: 100%;
+  }
+
   .sidebar-content {
     margin-top: 40px;
     text-align: right;

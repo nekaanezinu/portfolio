@@ -171,6 +171,10 @@ export default {
   padding: 10px;
   width: calc(75% - 20px);
 
+  @media screen and (max-width: 1000px) {
+    width: calc(100% - 20px);
+  }
+
   .header {
     font-size: 35px;
     padding-bottom: 5px;
@@ -179,8 +183,12 @@ export default {
 
   .project-list {
     padding-top: 10px;
-    max-height: 90vh;
+    max-height: calc(90vh - 20px);
     overflow-y: auto;
+
+    @media screen and (max-width: 1000px) {
+      max-height: none;
+    }
   }
 }
 </style>

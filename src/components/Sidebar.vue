@@ -7,6 +7,7 @@
         <a
           v-for="(link, index) in links"
           :key="`link-${index}`"
+          target="_blank"
           :href="link.href"
         >
           <unicon :name="link.icon" fill="#87bdb7" height="30" width="30" />
